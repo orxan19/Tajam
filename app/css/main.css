@@ -1317,7 +1317,7 @@ footer {
 
 @media (max-width: 480px) {
   html {
-    font-size: 7px; }
+    font-size: 6px; }
   header .header {
     padding-left: 30px; }
     header .header ul li {
@@ -1381,3 +1381,8 @@ footer {
 @media (min-width: 642px) {
   .video__play_mobile {
     display: none; } }
+
+
+.switchers{
+  margin-top: 60px;
+}
