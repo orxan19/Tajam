@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://use.fontawesome.com/dd7f8d1955.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header>
@@ -21,12 +23,12 @@
 					<nav>
 						<ul>
 							<li><a href="#">home</a></li>
-							<li><a href="">about</a></li>
-							<li><a href="">expertise</a></li>
-							<li><a href="">teams</a></li>
-							<li><a href="">works</a></li>
-							<li><a href="">people say</a></li>
-							<li><a href="">contact</a></li>
+							<li><a href="#story">about</a></li>
+							<li><a href="#expertise">expertise</a></li>
+							<li><a href="#meet">teams</a></li>
+							<li><a href="#works">works</a></li>
+							<li><a href="#we">people say</a></li>
+							<li><a href="#contact">contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -92,8 +94,15 @@
 
 	<section id="video">
 		<div class="overlay"></div>
-		<span class="video__play"><i class="fa fa-play"></i></span>
+		<a class="video__play" href="#modal1"><i class="fa fa-play"></i></a>
+		<a href="https://www.youtube.com/watch?v=gGr3Vj-8xwI" class="video__play_mobile"><i class="fa fa-play"></i></a>
 		<h4>watch our story</h4>
+		<div class="remodal-bg">
+			<div class="remodal" data-remodal-id="modal1">
+			  <button data-remodal-action="close" class="remodal-close"></button>
+			  <iframe width="800" height="450" src="https://www.youtube.com/embed/gGr3Vj-8xwI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</section>
 	
 	<section id="expertise">
@@ -180,49 +189,142 @@
 				<p>See All Project in dribbble<i class="fa fa-arrow-down" aria-hidden="true"></i></p>
 			</div>
 			<div class="works">
-				<a class="work work1" href="https://www.youtube.com/" target="_blank"><div class="vs">
-					<h4>Check out <br>on Github</h4>
+				<a class="work work1"><div class="vs">
+					<h4>Check out <br>on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
+					
 				</div>
 				<div class="work__overlay"></div>
 			</a>
 
-				<div class="work work2"><div class="vs">
-					<h4>Check out<br> on Github</h4>
+				<a class="work work2"><div class="vs">
+					<h4>Check out<br> on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
 				</div>
 				<div class="work__overlay"></div>
-			</div>
+			</a>
 
-				<div class="work work3"><div class="vs">
-					<h4>Check out <br> on Github</h4>
+				<a class="work work3"><div class="vs">
+					<h4>Check out <br> on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
 				</div>
 				<div class="work__overlay"></div>
-			</div>
+			</a>
 
-				<div class="work work4"><div class="vs">
-					<h4>Check out <br>on Github</h4>
+				<a class="work work4"><div class="vs">
+					<h4>Check out <br>on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
 				</div>
 				<div class="work__overlay"></div>
-			</div>
+			</a>
 
-				<div class="work work5"><div class="vs">
-					<h4>Check out<br> on Github</h4>
+				<a class="work work5"><div class="vs">
+					<h4>Check out<br> on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
 				</div>
 				<div class="work__overlay"></div>
-			</div>
+			</a>
 
-				<div class="work work6"><div class="vs">
-					<h4>Check out<br> on Github</h4>
+				<diav class="work work6"><div class="vs">
+					<h4>Check out<br> on Github <i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
 
-				</div>
+				</a>
 				<div class="work__overlay"></div>
-			</div>
+			</a>
 			</div>
 		</div>
 		
 	</section>
 
+	<section id="we">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="we__alignment">
+				<span class="quotes"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+				<p class="we__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean <br>sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis <br>sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus <br>a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+				<h3>jane galadrial</h3>
+				<h4>ceo tangkurep</h4>
+				<div class="we__slider">
+					
+				</div>
+			</div>
+		</div>
 
+	</section>
 
+	<section id="contact">
+
+		<div class="container">
+
+			<div class="alignment">
+
+				<div class="form">
+					<h2>give us a good news</h2>
+					<form action="">
+						<input type="text" class="first" placeholder="Name">
+						<input type="email" placeholder="Email">
+						<input type="text" placeholder="Subject">
+						<textarea name="textarea" id="" cols="30" rows="10" placeholder="Your Message" style="resize: none;"></textarea>
+						<button type="submit" class="submit">submit</button>
+					</form>
+				</div>
+				<div class="clients">
+					<h2>our happy clients</h2>
+					<div class="client__alignment">
+						<div class="client client1"></div>
+						<div class="client client2"></div>
+						<div class="client client3"></div>
+						<div class="client client4"></div>
+						<div class="client client5"></div>
+						<div class="client client6"></div>
+						<div class="client client7"></div>
+						<div class="client client8"></div>
+						<div class="client client9"></div>
+						<div class="client client10"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer__content">
+
+				<div class="tajam">
+					<div class="logo">
+						<img src="img/vector-smart-object.png" alt="a">
+						<span class="logo__name">tajam</span>
+					</div>
+					<p>lorem quis bibendum auctor, nisi elit <br>consequat ipsum, nec sagittis sem nibh elit. <br>Duis sed odio sit amet auctror a ornare odio <br>non mauris vitae erat in elit</p>
+				</div>
+				<div class="ourstudio">
+					<h3>OUR STUDIO</h3>
+					<p class="marker"><i class="fa fa-map-marker" aria-hidden="true"></i> Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+								11480 - Indonesia</p>
+					<p class="phone"><i class="fa fa-phone" aria-hidden="true"></i><a href="(+62) 21-2224 3333" class="phonenumber">(+62) 21-2224 3333</a></p>
+				</div>
+				<div class="collaborate">
+					<h3>stay in touch</h3>
+					<div class="send">
+						<input type="text" placeholder="Subscribe our newsletter">
+						<a><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+					</div>
+					<div class="social">
+
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</footer>
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 	<script src="js/common.js"></script>
+	<script src="js/remodal.js"></script>
 </body>
 </html>
